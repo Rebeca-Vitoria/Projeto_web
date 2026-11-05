@@ -1,0 +1,87 @@
+/* Configurações gerais e reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; /* Fundo azul-bebê suave */
+    color: #334e68;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #486581;
+    border-bottom: 3px solid #bcccdc;
+    padding-bottom: 10px;
+}
+
+/* CONTAINER PRINCIPAL: Alinha os projetos lado a lado */
+main {
+    display: flex;
+    flex-direction: row; /* Coloca os itens na horizontal */
+    justify-content: center; /* Centraliza o bloco na tela */
+    align-items: center;
+    gap: 30px; /* Cria um espaçamento de 30px entre os dois cards */
+    flex-wrap: wrap; /* Faz com que os cards quebrem de linha em telas pequenas/celulares */
+    flex-grow: 1;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Configuração de cada card de projeto */
+div {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(188, 204, 220, 0.4);
+    text-align: center;
+    width: 280px; /* Define uma largura fixa igual para ambos os cards */
+    transition: transform 0.2s ease;
+}
+
+div:hover {
+    transform: translateY(-5px);
+}
+
+div h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #486581;
+    min-height: 50px; /* Garante alinhamento mesmo se os títulos tiverem tamanhos diferentes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Configuração das Imagens */
+div img {
+    width: 150px; /* Padroniza o tamanho das duas imagens */
+    height: 150px;
+    object-fit: contain; /* Impede que as imagens fiquem distorcidas */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #627d98;
+}
